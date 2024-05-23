@@ -17,3 +17,15 @@ public class Vehiculos {
         System.out.println("Modelo: " + modelo);
     }
 }
+
+class Automovil extends Vehiculos{
+    public int anio;
+
+    public Automovil(String placa, String marca, String modelo, int anio){
+        super(placa, marca, modelo);
+        this.anio = anio;
+    }
+    public void lanzamiento(){
+        System.out.println("Año: " + anio);
+    }
+}
