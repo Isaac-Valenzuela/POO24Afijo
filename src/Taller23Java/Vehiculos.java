@@ -10,4 +10,10 @@ public class Vehiculos {
         this.marca = marca;
         this.modelo = modelo;
     }
+
+    public void mostrar(){
+        System.out.println("Placa: " + placa);
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+    }
 }
