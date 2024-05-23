@@ -20,12 +20,18 @@ public class Vehiculos {
 
 class Automovil extends Vehiculos{
     public int anio;
+    public String picoplaca;
+    public String duenio;
 
-    public Automovil(String placa, String marca, String modelo, int anio){
+    public Automovil(String placa, String marca, String modelo, int anio, String picoplaca, String duenio){
         super(placa, marca, modelo);
         this.anio = anio;
+        this.picoplaca = picoplaca;
+        this.duenio = duenio;
     }
     public void lanzamiento(){
         System.out.println("Año: " + anio);
+        System.out.println("Dia pico y placa: " + picoplaca);
+        System.out.println("Dueño: " + duenio);
     }
 }
